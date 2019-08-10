@@ -12,7 +12,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageview_header"
+                android:id="@+id/headerImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
@@ -22,7 +22,7 @@
         </com.gra.funwithtransitions.utils.SquareFrameLayout>
 
         <TextView
-            android:id="@+id/textview_title"
+            android:id="@+id/headerSubtitleTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
@@ -32,6 +32,7 @@
             android:theme="@android:style/Theme.Material" />
 
         <TextView
+            android:id="@+id/descriptionTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
