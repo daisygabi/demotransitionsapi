@@ -21,11 +21,6 @@ public class DetailsActivityTest {
     }
 
     @Test
-    public void testHeaderImage_Subtitle_IsVisible() {
-        EspressoUtils.isViewByIdIsShown(R.id.headerSubtitleTxt);
-    }
-
-    @Test
     public void testImage_Description_IsVisible() {
         EspressoUtils.isViewByIdIsShown(R.id.descriptionTxt);
     }

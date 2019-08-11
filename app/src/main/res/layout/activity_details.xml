@@ -7,11 +7,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <include
-            android:id="@+id/detailsToolbar"
-            layout="@layout/toolbar_default"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <!--<include-->
+        <!--android:id="@+id/detailsToolbar"-->
+        <!--layout="@layout/toolbar_default"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
 
         <com.gra.funwithtransitions.utils.SquareFrameLayout
             android:layout_width="match_parent"
@@ -26,15 +26,6 @@
                 android:transitionName="@string/endTransition" />
 
         </com.gra.funwithtransitions.utils.SquareFrameLayout>
-
-        <TextView
-            android:id="@+id/headerSubtitleTxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryLight"
-            android:maxLines="1"
-            android:padding="@dimen/small"
-            android:text="@string/details_image_caption" />
 
         <TextView
             android:id="@+id/descriptionTxt"
