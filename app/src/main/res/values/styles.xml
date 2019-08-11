@@ -9,6 +9,7 @@
 
         <!-- Enable transitions-->
         <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowExitAnimation">@transition/grid_exit</item>
     </style>
 
     <style name="FunWithTransitionsToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
