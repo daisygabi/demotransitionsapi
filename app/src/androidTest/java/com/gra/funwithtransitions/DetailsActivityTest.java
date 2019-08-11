@@ -1,26 +1,15 @@
 package com.gra.funwithtransitions;
 
 
-import androidx.test.espresso.Espresso;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
 
-import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-/**
- * UI tests for details feature
- */
 @RunWith(AndroidJUnit4.class)
 public class DetailsActivityTest {
-
-    @Before
-    public void setUp() {
-        // So test can see the views behind the keyboard
-        Espresso.closeSoftKeyboard();
-    }
 
     @Rule
     public ActivityTestRule<DetailsActivity> activityRule =
@@ -32,7 +21,12 @@ public class DetailsActivityTest {
     }
 
     @Test
-    public void testHeaderImageSubtitle_IsVisible() {
+    public void testHeaderImage_Subtitle_IsVisible() {
         EspressoUtils.isViewByIdIsShown(R.id.headerSubtitleTxt);
+    }
+
+    @Test
+    public void testImage_Description_IsVisible() {
+        EspressoUtils.isViewByIdIsShown(R.id.descriptionTxt);
     }
 }
