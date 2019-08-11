@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Intent openDetailsViewIntent = new Intent(this, DetailsActivity.class);
+        openDetailsViewIntent.setAction(Intent.ACTION_VIEW);
         startActivity(openDetailsViewIntent, ActivityOptions.makeSceneTransitionAnimation(this, mainImage, "target").toBundle());
     }
 
