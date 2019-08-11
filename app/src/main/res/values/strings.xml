@@ -12,4 +12,6 @@
     <string name="details_title">Details</string>
     <string name="flowers_title">Flowers</string>
     <string name="details_image_caption">This photo represents a red rose</string>
+    <string name="startTransition">source</string>
+    <string name="endTransition">target</string>
 </resources>

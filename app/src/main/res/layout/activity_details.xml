@@ -23,7 +23,7 @@
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/rose"
-                android:transitionName="target" />
+                android:transitionName="@string/endTransition" />
 
         </com.gra.funwithtransitions.utils.SquareFrameLayout>
 

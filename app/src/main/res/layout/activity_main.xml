@@ -52,7 +52,7 @@
             android:layout_centerInParent="true"
             android:scaleType="centerCrop"
             android:src="@drawable/rose"
-            android:transitionName="source" />
+            android:transitionName="@string/startTransition" />
 
         <ImageView
             android:id="@+id/secondImage"
