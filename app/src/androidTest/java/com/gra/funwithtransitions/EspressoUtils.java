@@ -5,7 +5,6 @@ import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
-import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.CoreMatchers.anyOf;
 
 /**
@@ -24,12 +23,5 @@ public class EspressoUtils {
                 withId(id)))
                 .check(matches(isDisplayed()))
                 .perform(click());
-    }
-
-    public static void matchStringFromShownViewById(int id, String value) {
-        onView(anyOf(
-                withId(id)))
-                .check(matches(isDisplayed()))
-                .check(matches(withText(value)));
     }
 }

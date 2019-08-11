@@ -28,4 +28,9 @@ public class MainActivityTest {
     public void testClickableImage_IsVisible() {
         EspressoUtils.isViewByIdIsShown(R.id.mainImage);
     }
+
+    @Test
+    public void testClick_Image() {
+        EspressoUtils.clickViewByIdIfShown(R.id.mainImage);
+    }
 }

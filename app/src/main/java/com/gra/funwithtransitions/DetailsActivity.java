@@ -1,9 +1,7 @@
 package com.gra.funwithtransitions;
 
 import android.os.Bundle;
-import android.transition.Slide;
-import android.view.Gravity;
-import android.view.animation.AnimationUtils;
+import android.transition.Explode;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,14 +20,11 @@ public class DetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_details);
         ButterKnife.bind(this);
 
-        Slide animation = new Slide(Gravity.BOTTOM);
-        animation.setInterpolator(AnimationUtils.loadInterpolator(this, android.R.interpolator.linear_out_slow_in));
-
+        Explode animation = new Explode();
         animation.excludeTarget(android.R.id.statusBarBackground, true);
         animation.excludeTarget(android.R.id.navigationBarBackground, true);
 
         getWindow().setEnterTransition(animation);
-        getWindow().setExitTransition(animation);
     }
 
     @Override
